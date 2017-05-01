@@ -106,7 +106,7 @@ $.ajax({
 			//});
 			map.panTo(self2.marker.getPosition())
 			self2.infowindow.open(map,self2.marker);
-			self2.infowindow.setContent('<div>'+infi+'</div>');
+			self2.infowindow.setContent('<div class="infow">'+infi+'</div>');
 		};
 		this.addListener = google.maps.event.addListener(self2.marker,'click', (this.openInfowindow));
 		if (loc.title.toLowerCase().indexOf(search) >= 0){

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<div class="container-fluid" id="mapcontainer">
+		<div class="listconatiner">
+			<input data-bind="textInput:query" type="text" placeholder="search for places" class="search_input">
+			<ul data-bind="foreach:search" >
+			<li class="location-item" data-bind="text:title,click:openInfowindow"></li>
+			</ul>
+		</div>
+		<div id="map">
+		</div>
+	</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/knockout.js"></script>
+<script src="js/map.js"></script>
+<script onerror="maperror()" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJCpi9NrnjKxNEb460WleC6DTuHMAb2CA&callback=initMap" async defer>
+</script>
+</body>
+</html>

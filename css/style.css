@@ -24,10 +24,15 @@ font-size:18px;
 margin-left:40px;
 }
 .gm-style-iw ,.infow{
-    text-align:justify;
-	margin:0px;
-	padding-right:5px;
-    max-width:300px;
-	overflow-y: scroll;
-	height:150px;
+ text-align:justify;
+margin:0px;
+padding-right:5px;
+max-width:300px;
+overflow-y: scroll;
+height:150px;
+}
+.listconatiner{
+position:absolute;
+z-index:9999999;
+top:90px;
 }
